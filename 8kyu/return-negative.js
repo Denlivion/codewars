@@ -12,7 +12,8 @@
 
 //👨‍💻SOLUTION
 function makeNegative(num) {
-    let result= (num>0)?('-'+num):(num);
+    let result= (num>0)?((num)-num*2):(num);
+    // console.log(result)
     return(result);
 }
-makeNegative(9)
+makeNegative(-0.12)
