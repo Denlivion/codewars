@@ -1,4 +1,4 @@
-//👀DESCRIPTION
+//👀DESCRIPTION:
 //In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 //Examples
 // makeNegative(1);    // return -1
@@ -10,7 +10,7 @@
 // Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 
 
-//👨‍💻SOLUTION
+//👨‍💻SOLUTION:
 function makeNegative(num) {
     let result= (num>0)?((num)-num*2):(num);
     return(result);
