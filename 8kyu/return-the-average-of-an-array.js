@@ -1,30 +1,25 @@
 //👀DESCRIPTION:
-//It's the academic year's end, fateful moment of your school report.
-// The averages must be calculated. All the students come to you
-// and entreat you to calculate their average for them.
-// Easy ! You just need to write a script.
+//Complete the solution so that it reverses the string passed into it.
 
-//Return the average of the given array rounded !!****DOWN****!! to its nearest integer.
-
-//📑NOTES:
-//The array will never be empty.
+//🛷EXAMPLES:
+//'world'  =>  'dlrow'
+//'word'   =>  'drow'
 
 //👨‍💻SOLUTION:
 
-const marksOfNick = [1,1,1,1,1,1,1,2];
+const someString = 'word';
 
+function solution(str){
 
-function getAverage(marks){
+    str = str.split('')
+    let reversedString
+    let temporaryArray = [];
 
-    let sum = 0;
-    let average;
-
-    for (let i = 0; i < marks.length; i++){
-        sum += marks[i];
+    for (let i = str.length-1; i >= 0 ; i--){
+        temporaryArray.push(str[i])
     }
-    average = Math.floor(sum / (marks.length))
-
-    return average
+    reversedString = temporaryArray.join('')
+    return reversedString
 }
 
-getAverage(marksOfNick)
+solution(someString)
