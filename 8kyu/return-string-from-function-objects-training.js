@@ -8,7 +8,7 @@
 //👨‍💻SOLUTION:
 
 const human = {
-    name: "woman",
+    name: "man",
     legs: 2,
     color: "white",
 }
