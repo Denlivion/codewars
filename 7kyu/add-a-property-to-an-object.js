@@ -14,36 +14,19 @@ let car = {
 
 function addProperty(obj, prop, value) {
     for (const key in obj) {
-        if ((key === prop) && (obj[key] === value)) {
+        if (key === prop) {
             throw new Error('This property already exists')
         }
-         else if ((key === prop) && (obj[key] !== value))
-         {
-        obj[prop] = value
     }
-    else
-    {
-            obj[prop] = value
+    for (const key in obj){
+        if (obj[key] !== value)
+        {
+            obj[key] = value
         }
     }
-
+    obj[prop] = value
     return obj
 }
 
-
-
-
-addProperty(car, "millage", "202000")
+addProperty(car, "brand", "AUDI")
 console.log(car)
-
-
-// function includesElement(array, element) {
-//     let isInArray = false
-//     for (let i = 0; i < array.length; i++) {
-//         let argument = array[i];
-//         if (argument === element){
-//             isInArray = true
-//         }
-//     }
-//     return isInArray
-// }
