@@ -1,0 +1,38 @@
+//👀DESCRIPTION:
+//Consider an array/list of sheep where some sheep may be missing from their place.
+// We need a function that counts the number of sheep present in the array (true means present).
+
+
+//🛷EXAMPLES:
+//[true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true]
+
+//The correct answer would be 17.
+
+//📑NOTES:
+//Hint: Don't forget to check for bad values like null/undefined
+
+//👨‍💻SOLUTION:
+
+const howManySheepPresent = [true,  true,  true,  false,
+                                        true,  true,  true,  true ,
+                                        true,  false, true,  false,
+                                        true,  false, false, true ,
+                                        true,  undefined,  true,  true ,
+                                        false, false, true,  true];
+
+function countSheeps(sheep) {
+    let numberOfSheepPresent = 0;
+    for (let i = 0; i < sheep.length; i++) {
+        if(sheep[i]){
+            numberOfSheepPresent++
+        }
+    }
+    return numberOfSheepPresent
+}
+
+console.log(countSheeps(howManySheepPresent))
