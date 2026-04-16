@@ -17,7 +17,12 @@
 //          }
 
 //👨‍💻SOLUTION:
+const someArray = ['a', 1, 2, false, 'b'];
 
 function separateTypes(input) {
 
+return resultObject
 }
+
+console.log(separateTypes(someArray))
+separateTypes(someArray)
