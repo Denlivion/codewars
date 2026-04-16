@@ -27,3 +27,13 @@ function descendingOrder(n){
     return result
 }
 console.log(descendingOrder(ourNumber))
+
+// const countLetters =[];
+//    if((newArray.length) === 4) {
+//          let countLetters = ((newArray) => {
+//              addRightName = [...makeArrayFromName];
+//              console.log(addRightName)
+//              return (addRightName)
+//          })
+//    }
+// console.log(addRightName)

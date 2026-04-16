@@ -24,6 +24,6 @@ function filter_list(l) {
         }
     }
     return newArray;
-}k
+}
 
 filter_list(list);
