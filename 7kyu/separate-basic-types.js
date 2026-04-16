@@ -18,7 +18,7 @@
 
 //👨‍💻SOLUTION:
 const someArray = ['a', 1, 2, 'b'];
-// console.log(typeof someArray[3])
+
 function separateTypes(input) {
     const resultObject =  {};
     for (const item of input) {
