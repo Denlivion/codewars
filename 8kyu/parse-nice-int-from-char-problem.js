@@ -14,10 +14,11 @@
 
 //👨‍💻SOLUTION:
 
-const answer = "i'm 4";
+const answer = "I'm 4";
 
 function getAge(inputString){
-// return the girl's correct age as an integer. Happy coding :)
+    console.log([...inputString] => ([...inputString].filter(Number)).join())
+    return [...inputString] => ([...inputString].filter(Number)).join();
 }
 
 console.log(getAge(answer));
