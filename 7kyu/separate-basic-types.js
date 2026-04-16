@@ -18,11 +18,15 @@
 
 //👨‍💻SOLUTION:
 const someArray = ['a', 1, 2, false, 'b'];
-
+console.log(typeof someArray[3])
 function separateTypes(input) {
+    input.forEach(item) => {
+        if(typeof item === )
+    }
+
 
 return resultObject
 }
 
-console.log(separateTypes(someArray))
+// console.log(separateTypes(someArray))
 separateTypes(someArray)
