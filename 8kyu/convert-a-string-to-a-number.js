@@ -19,8 +19,7 @@
 let example = "1234";
 
 const stringToNumber = function(str){
-    // put your code here
-    return null;
+    return Number(str)
 }
 console.log(stringToNumber(example))
 stringToNumber(example);
