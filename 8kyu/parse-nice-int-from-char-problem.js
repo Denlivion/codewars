@@ -21,6 +21,6 @@ function getAge(inputString){
     numberArray = stringItemsArray.filter(item => {
         return  parseFloat(item)
         })
-    return numberArray.join();
+    return Number(numberArray);
 }
 getAge(answer)
