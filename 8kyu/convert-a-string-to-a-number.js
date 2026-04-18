@@ -21,5 +21,4 @@ let example = "1234";
 const stringToNumber = function(str){
     return Number(str)
 }
-console.log(stringToNumber(example))
 stringToNumber(example);
