@@ -14,11 +14,13 @@
 
 //👨‍💻SOLUTION:
 
-const answer = "I'm 4";
+const answer = "5 years old";
 
 function getAge(inputString){
-    console.log([...inputString] => ([...inputString].filter(Number)).join())
-    return [...inputString] => ([...inputString].filter(Number)).join();
+    const stringItemsArray = [...inputString];
+    numberArray = stringItemsArray.filter(item => {
+        return  parseFloat(item)
+        })
+    return numberArray.join();
 }
-
-console.log(getAge(answer));
+getAge(answer)
