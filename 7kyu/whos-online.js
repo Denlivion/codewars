@@ -46,7 +46,19 @@
 // In this case you should return an empty object {} (empty Dictionary in C#).
 
 //👨‍💻SOLUTION:
-
+const userLibrary2 = [{
+  username: 'David',
+  status: 'online',
+  lastActivity: 10
+}, {
+  username: 'Lucy',
+  status: 'offline',
+  lastActivity: 22
+}, {
+  username: 'Bob',
+  status: 'online',
+  lastActivity: 104
+}];
 const whosOnline = (friends) => {
     const usersStatusObject = {};
     for (let i = 0; i < friends.length; i++) {
@@ -59,7 +71,8 @@ const whosOnline = (friends) => {
             (usersStatusObject.online)?usersStatusObject.online.push(item[0]):usersStatusObject.online = [(item[0])];
         }
     }
-    return usersStatusObjeckt
+    // console.log(usersStatusObject);
+    return usersStatusObject
 }
 
 console.log(whosOnline(userLibrary2))

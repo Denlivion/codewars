@@ -17,16 +17,19 @@
 //          }
 
 //👨‍💻SOLUTION:
-const someArray = ['a', 1, 2, false, 'b'];
-console.log(typeof someArray[3])
+const someArray = ['a', 1, 2, 'b'];
+
 function separateTypes(input) {
-    input.forEach(item) => {
-        if(typeof item === )
+    const resultObject =  {};
+    for (const item of input) {
+        if(typeof item === 'number'){
+            (resultObject.number)?resultObject.number.push(item):resultObject.number = [(item)]
+        } else if (typeof item === 'boolean'){
+            (resultObject.boolean)?resultObject.boolean.push(item):resultObject.boolean = [(item)]
+        } else {
+            (resultObject.string)?resultObject.string.push(item):resultObject.string = [(item)]
+        }
     }
-
-
-return resultObject
+    return resultObject
 }
-
-// console.log(separateTypes(someArray))
 separateTypes(someArray)
