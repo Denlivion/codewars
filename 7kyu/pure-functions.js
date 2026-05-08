@@ -26,8 +26,6 @@ const state = {
 };
 
 function solution(arr, options) {
-  let itemResult = arr.map(i => i += 2 * options.modifier
-  );
- return itemResult;
+    return arr.map(i => i += 2 * options.modifier);
 }
 solution(Array, state);
