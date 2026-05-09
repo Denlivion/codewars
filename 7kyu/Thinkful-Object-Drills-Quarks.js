@@ -35,3 +35,12 @@
 // "red"
 
 //👨‍💻SOLUTION:
+
+
+
+class Quark{
+
+    interact(){
+
+    }
+}
