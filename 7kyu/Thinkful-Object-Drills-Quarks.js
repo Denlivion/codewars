@@ -39,8 +39,66 @@
 
 
 class Quark{
-
-    interact(){
-
+    constructor(color, flavor) {
+        this.color = color;
+        this.flavor = flavor;
+        this.baryon_number = 0.3333333333333333;
+    }
+    interact(anotherQuark){
+        let temporaryColor = this.color
+        this.color = anotherQuark.color
+        anotherQuark.color = temporaryColor
     }
 }
+
+
+
+class Q1 extends Quark{
+    constructor(color, flavor, baryon_number) {
+        super(baryon_number);
+        this.color = color;
+        this.flavor = flavor;
+    }
+    interact(anotherQuark){
+        let temporaryColor = this.color
+        this.color = anotherQuark.color
+        anotherQuark.color = temporaryColor
+    }
+}
+
+let q1 = new Quark("red", "up");
+
+class Q2 extends Quark{
+    constructor(color, flavor, baryon_number) {
+        super(baryon_number);
+        this.color = color;
+        this.flavor = flavor;
+    }
+    interact(anotherQuark){
+        let temporaryColor = this.color
+        this.color = anotherQuark.color
+        anotherQuark.color = temporaryColor
+    }
+}
+
+let q2 = new Quark("blue", "strange")
+
+class Q3 extends Quark{
+    constructor(color, flavor, baryon_number) {
+        super(baryon_number);
+        this.color = color;
+        this.flavor = flavor;
+    }
+    interact(anotherQuark){
+        let temporaryColor = this.color
+        this.color = anotherQuark.color
+        anotherQuark.color = temporaryColor
+    }
+}
+
+let q3 = new Quark('green', 'top');
+
+console.log(q1.color, q1.flavor);
+q1.interact(q2);
+console.log(q1.color, q1.flavor);
+console.log(q2.color);
