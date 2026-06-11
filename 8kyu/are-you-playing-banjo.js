@@ -11,8 +11,11 @@
 //👨‍💻SOLUTION:
 
 function areYouPlayingBanjo(name) {
+    let nameArr = [...name];
+    name = ((nameArr[0] === ("R")) || (nameArr[0] === ("r"))) ?  name + " plays banjo" : name + " does not play banjo"
     // Implement me
     return name;
 }
 
-areYouPlayingBanjo('Ringo')
+console.log(areYouPlayingBanjo('Jana'))
+areYouPlayingBanjo('Jana')
